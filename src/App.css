@@ -1,0 +1,42 @@
+:root {
+  --bg-col: #121212;
+  --text-col: #ffffff;
+  --glow-div-width: 65%;
+  --glow-div-height: 85%;
+  --glow-animation-duration: 15s;
+  --border-radius: 10px;
+  --blur: 20px;
+  --font-family: "Nunito", sans-serif;
+  --font-size: 2rem;
+  --font-weight: 1000;
+
+  --btn-border-radius: 10px;
+  --btn-font-family: "Nunito", sans-serif;
+  --btn-font-size: 1rem;
+  --btn-font-weight: 700;
+
+  --image-size: 200px;
+}
+
+.random-btn{
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: var(--btn-border-radius);
+  font-family: var(--btn-font-family);
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+
+  transition: all .2s ease;
+}
+
+.random-btn:hover{
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.random-btn:active{
+  background-color: #121212;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgb(255, 255, 255);
+}
