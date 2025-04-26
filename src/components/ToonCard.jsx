@@ -11,18 +11,18 @@ export default function ToonCard({ name, image }) {
             alt={name}
             className="toon-image"
             key={image}
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0 }}
+            exit={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2, ease: "easeInOut" }}
           />
 
           <motion.p
             className="toon-name"
             key={name}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: 20, scale: 0 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 1, y: -20, scale: 1 }}
             transition={{ duration: 1.5, ease: "easeIn" }}
           >
             {name}

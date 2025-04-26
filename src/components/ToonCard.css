@@ -71,7 +71,7 @@
 
 .toon-name {
   font-family: var(--font-family);
-  font-weight: var(--font-weight);
+  font-weight: 800;
   font-size: var(--font-size);
   margin-top: 0.5rem;
 }
